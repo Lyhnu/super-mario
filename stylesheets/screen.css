@@ -109,8 +109,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 999;
 }
 /* line 44, ../sass/screen.scss */
-#content .border .game {
-  width: 100%;
-  height: 100%;
+#content .border .hidden {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+}
+/* line 49, ../sass/screen.scss */
+#content .border .hidden .peach {
+  width: 55px;
+  height: 76px;
+  background-image: url("../images/peach-face.png");
+  z-index: 9999;
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  margin-left: -35px;
+}
+/* line 60, ../sass/screen.scss */
+#content .border .hidden .right {
+  background-image: url("../images/peach-droite.gif");
+}
+/* line 64, ../sass/screen.scss */
+#content .border .hidden .left {
+  background-image: url("../images/peach-gauche.gif");
+}
+/* line 68, ../sass/screen.scss */
+#content .border .hidden .top {
+  background-image: url("../images/peach-saut.png");
+}
+/* line 72, ../sass/screen.scss */
+#content .border .hidden .game {
+  width: 3000px;
+  height: 400px;
   background-image: url("../images/map-peach.png");
+  position: fixed;
 }

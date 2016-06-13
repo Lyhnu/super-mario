@@ -30,7 +30,7 @@ $peach-color:#F79FBF;
 		background: -webkit-linear-gradient(top,  #ccf3ff 0%,#91e7ff 49%,#f2b8f1 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom,  #ccf3ff 0%,#91e7ff 49%,#f2b8f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccf3ff', endColorstr='#f2b8f1',GradientType=0 ); /* IE6-9 */
-		
+
 		.logo{
 			position: absolute;
 			background: url('../images/logo.png');
@@ -41,10 +41,40 @@ $peach-color:#F79FBF;
 			z-index: 999;
 		}
 
-		.game{
-			width: 100%;
-			height: 100%;
-			background-image: url('../images/map-peach.png');
+		.hidden{
+			overflow: hidden;
+			width: 400px;
+			height: 400px;
+
+			.peach{
+				width: 55px;
+				height: 76px;
+				background-image: url('../images/peach-face.png');
+				z-index: 9999;
+				position: absolute;
+				bottom: 48px;
+				left: 50%;
+				margin-left: -35px;
+			}
+
+			.right{
+				background-image: url('../images/peach-droite.gif');
+			}
+
+			.left{
+				background-image: url('../images/peach-gauche.gif');
+			}
+
+			.top{
+				background-image: url('../images/peach-saut.png');
+			}
+
+			.game{
+				width: 3000px;
+				height: 400px;
+				background-image: url('../images/map-peach.png');
+				position: fixed;	
+			}
 		}
 	}
 }
