@@ -9,6 +9,9 @@ $peach-color:#F79FBF;
 
 #content{
 	background: $peach-color;
+	background-image: url('../images/texture.png');
+	background-repeat: repeat;
+	background-size: 1%;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -45,11 +48,24 @@ $peach-color:#F79FBF;
 			overflow: hidden;
 			width: 400px;
 			height: 400px;
+			position: relative;
+
+			.count {
+				font-family: courier;
+				font-weight: bold;
+				font-size: 30px;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				color: white;
+				text-shadow: 1px 1px $peach-color, -1px 1px $peach-color, -1px -1px $peach-color, 1px -1px $peach-color;
+				z-index: 99999;
+			}
 
 			.peach{
-				width: 55px;
-				height: 76px;
-				background-image: url('../images/peach-face.png');
+				width: 75px;
+				height: 111px;
+				background-image: url('../images/peach-face.gif');
 				z-index: 9999;
 				position: absolute;
 				bottom: 48px;
@@ -58,22 +74,23 @@ $peach-color:#F79FBF;
 			}
 
 			.right{
-				background-image: url('../images/peach-droite.gif');
+				background-image: url('../images/peach-right.gif');
 			}
 
 			.left{
-				background-image: url('../images/peach-gauche.gif');
+				background-image: url('../images/peach-left.gif');
 			}
 
 			.top{
-				background-image: url('../images/peach-saut.png');
+				background-image: url('../images/peach-jump.gif');
 			}
 
 			.game{
 				width: 3000px;
 				height: 400px;
 				background-image: url('../images/map-peach.png');
-				position: fixed;	
+				background-repeat: repeat-y;
+				position: absolute;	
 			}
 		}
 	}
