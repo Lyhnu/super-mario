@@ -1,5 +1,4 @@
 $(function(){
-
 	//set temporary class
 	$.fn.extend({
         addTemporaryClass: function(className, duration) {
@@ -32,26 +31,28 @@ $(function(){
 		}
 	});
 
-	//movement map + peach
-	var pos = $('.peach').position();
+	//movement map + peach + stop map
+	var pos = $(".peach").position();
 
 	moveRight = {
-		right: "+=20px"
+		left: "-=20px"
 	}
 
 	moveLeft = {
-		right: "-=20px"
+		left: "+=20px"
 	}
 
-	$(document).keydown(function(event){
-		if (event.which == 68) {
+	$(document).keydown(function(event){		
+		var posX = $(".game").position().left;
+		if (event.which == 68 && posX > -2600 ) {
 			$(".game").animate(moveRight, 0);
-		} else if (event.which == 81 || event.which == 65) {
+			console.log(posX);
+		} else if (event.which == 81 && posX < 0 || event.which == 65 && posX < 0) {
 			$(".game").animate(moveLeft, 0);
 		} else if (event.which == 90 || event.which == 87) {
-			$(".peach").animate({'top':pos.top - 100 + 'px'}, 400);
+			$(".peach").animate({'top':pos.top - 100 + 'px'}, 250);
 			setTimeout(function(){
-		    	$('.peach').animate({'top': pos.top + 'px'}, 90);
+		    	$('.peach').animate({'top': pos.top + 'px'}, 50);
 		    }, 400);
 		}
 	});
