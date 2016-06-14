@@ -19,7 +19,7 @@ $(function(){
 		} else if (event.which == 81 || event.which == 65) {
 			$(".peach").addClass("left");
 		} else if (event.which == 90 || event.which == 87) {
-			$(".peach").addTemporaryClass("top", 600);
+			$(".peach").addTemporaryClass("top", 400);
 		}
 	});
 
@@ -43,17 +43,17 @@ $(function(){
 	}
 
 	$(document).keydown(function(event){		
-		var posX = $(".game").position().left;
+		var posX = $(".map").position().left;
 		if (event.which == 68 && posX > -2600 ) {
-			$(".game").animate(moveRight, 0);
+			$(".map").animate(moveRight, 0);
 			console.log(posX);
 		} else if (event.which == 81 && posX < 0 || event.which == 65 && posX < 0) {
-			$(".game").animate(moveLeft, 0);
+			$(".map").animate(moveLeft, 0);
 		} else if (event.which == 90 || event.which == 87) {
 			$(".peach").animate({'top':pos.top - 100 + 'px'}, 250);
 			setTimeout(function(){
 		    	$('.peach').animate({'top': pos.top + 'px'}, 50);
-		    }, 400);
+		    }, 200);
 		}
 	});
 });

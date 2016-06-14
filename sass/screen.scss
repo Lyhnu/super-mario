@@ -50,16 +50,19 @@ $peach-color:#F79FBF;
 			height: 400px;
 			position: relative;
 
-			.count {
+			.count{
 				font-family: courier;
 				font-weight: bold;
 				font-size: 30px;
 				position: absolute;
 				top: 5px;
 				left: 5px;
-				color: white;
-				text-shadow: 1px 1px $peach-color, -1px 1px $peach-color, -1px -1px $peach-color, 1px -1px $peach-color;
+				color: #d77f9f;
 				z-index: 99999;
+
+				img{
+					width: 15px;
+				}
 			}
 
 			.peach{
@@ -85,11 +88,10 @@ $peach-color:#F79FBF;
 				background-image: url('../images/peach-jump.gif');
 			}
 
-			.game{
+			.map{
 				width: 3000px;
 				height: 400px;
 				background-image: url('../images/map-peach.png');
-				background-repeat: repeat-y;
 				position: absolute;
 			}
 		}
