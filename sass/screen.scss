@@ -69,7 +69,7 @@ $peach-color:#F79FBF;
 				width: 75px;
 				height: 111px;
 				background-image: url('../images/peach-face.gif');
-				z-index: 9999;
+				z-index: 99999999;
 				position: absolute;
 				bottom: 48px;
 				left: 50%;
@@ -93,6 +93,63 @@ $peach-color:#F79FBF;
 				height: 400px;
 				background-image: url('../images/map-peach.png');
 				position: absolute;
+
+				.flower{
+					background: url("../images/flower.png");
+					width: 40px;
+					height: 43px;
+					z-index: 999999;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					bottom:49px;
+					position: absolute;
+				}
+				.flower.nb1{
+					left: 600px;
+				}
+				.flower.nb2{
+					left:1494px;
+				}
+				.flower.nb3{
+					left: 2000px;
+				}
+
+				.coin{
+					background: url("../images/coin.gif");
+					width: 30px;
+					height: 42px;
+					z-index: 999999;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					bottom:200px;
+					position: absolute;
+				}
+				.coin.nb1{
+					left: 500px;
+					bottom: 120px;
+				}
+				.coin.nb2{
+					left: 550px;
+					bottom: 160px;
+				}
+				.coin.nb3{
+					left: 600px;
+				}
+				.coin.nb4{
+					left: 1600px;
+				}
+				.coin.nb5{
+					left: 1650px;
+					bottom: 160px;
+				}
+				.coin.nb6{
+					left: 1700px;
+					bottom: 120px;
+				}
+				.coin.nb7{
+					left: 2500px;
+					bottom: 60px;
+				}
 			}
 		}
 	}

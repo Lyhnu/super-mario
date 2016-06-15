@@ -138,7 +138,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 75px;
   height: 111px;
   background-image: url("../images/peach-face.gif");
-  z-index: 9999;
+  z-index: 99999999;
   position: absolute;
   bottom: 48px;
   left: 50%;
@@ -162,4 +162,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 400px;
   background-image: url("../images/map-peach.png");
   position: absolute;
+}
+/* line 97, ../sass/screen.scss */
+#content .border .hidden .map .flower {
+  background: url("../images/flower.png");
+  width: 40px;
+  height: 43px;
+  z-index: 999999;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  bottom: 49px;
+  position: absolute;
+}
+/* line 107, ../sass/screen.scss */
+#content .border .hidden .map .flower.nb1 {
+  left: 600px;
+}
+/* line 110, ../sass/screen.scss */
+#content .border .hidden .map .flower.nb2 {
+  left: 1494px;
+}
+/* line 113, ../sass/screen.scss */
+#content .border .hidden .map .flower.nb3 {
+  left: 2000px;
+}
+/* line 117, ../sass/screen.scss */
+#content .border .hidden .map .coin {
+  background: url("../images/coin.gif");
+  width: 30px;
+  height: 42px;
+  z-index: 999999;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  bottom: 200px;
+  position: absolute;
+}
+/* line 127, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb1 {
+  left: 500px;
+  bottom: 120px;
+}
+/* line 131, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb2 {
+  left: 550px;
+  bottom: 160px;
+}
+/* line 135, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb3 {
+  left: 600px;
+}
+/* line 138, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb4 {
+  left: 1600px;
+}
+/* line 141, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb5 {
+  left: 1650px;
+  bottom: 160px;
+}
+/* line 145, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb6 {
+  left: 1700px;
+  bottom: 120px;
+}
+/* line 149, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb7 {
+  left: 2500px;
+  bottom: 60px;
 }

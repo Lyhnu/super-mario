@@ -35,18 +35,16 @@ $(function(){
 	var pos = $(".peach").position();
 
 	moveRight = {
-		left: "-=20px"
+		left: "-=10px"
 	}
-
 	moveLeft = {
-		left: "+=20px"
+		left: "+=10px"
 	}
 
 	$(document).keydown(function(event){		
 		var posX = $(".map").position().left;
 		if (event.which == 68 && posX > -2600 ) {
 			$(".map").animate(moveRight, 0);
-			console.log(posX);
 		} else if (event.which == 81 && posX < 0 || event.which == 65 && posX < 0) {
 			$(".map").animate(moveLeft, 0);
 		} else if (event.which == 90 || event.which == 87) {
@@ -56,4 +54,6 @@ $(function(){
 		    }, 200);
 		}
 	});
+
+	//catch coins & flowers
 });
