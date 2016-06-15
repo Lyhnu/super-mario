@@ -1,4 +1,22 @@
 $(function(){
+	//start screen
+	$(".start-screen span").css( 'cursor', 'pointer' ); //change cursor
+	$(".start-screen span").click(function() {
+		$(".start-screen").fadeOut(200, function() {
+		//animation complete.
+		});
+	});
+
+	//end screen
+	var posX = $(".map").position().left;
+	if (posX = -2600 ) {
+		$(".end-screen span").click(function() {
+			$(".end-screen").fadeIn(200, function() {
+			//animation complete.
+			});
+		});
+	}
+
 	//set temporary class
 	$.fn.extend({
         addTemporaryClass: function(className, duration) {
