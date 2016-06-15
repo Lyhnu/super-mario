@@ -8,14 +8,13 @@ $(function(){
 	});
 
 	//end screen
-	var posX = $(".map").position().left;
-	if (posX = -2600 ) {
-		$(".end-screen span").click(function() {
+	$(document).keydown(function(event){
+		var posX = $(".map").position().left;
+		if (posX == -2600 ) {
 			$(".end-screen").fadeIn(200, function() {
-			//animation complete.
 			});
-		});
-	}
+		}
+	});
 
 	//set temporary class
 	$.fn.extend({
