@@ -1,6 +1,6 @@
 $(function(){
 	//start screen
-	$(".start-screen span").css( 'cursor', 'pointer' ); //change cursor
+	$(".start-screen span").css('cursor', 'pointer'); //change cursor
 	$(".start-screen span").click(function() {
 		$(".start-screen").fadeOut(200, function() {
 		//animation complete.
@@ -113,7 +113,7 @@ $(function(){
 		//catch coins & add score
 		var posMapY = $(".map").position().top;
 		var topPeach = $(".peach").position().top;
-		var posPeachY = topPeach;
+		var posPeachY = topPeach - 10;
 		var nbCoins = parseInt($(".coins span").text());
 		var removeCoin = -1;
 
@@ -122,8 +122,8 @@ $(function(){
 			var distX = Math.abs(value.posCoinLeft - posPeachX);
 			console.log(index + ": ", distX);
 			if (distX < 46 && distY < 50) {
-				$(value.objectCoin).animate({opacity:0}, { queue: false, duration: 600 });
-				$(value.objectCoin).animate(moveTop, { queue: false, duration: 600 });
+				$(value.objectCoin).animate({opacity:0}, {queue: false, duration: 600});
+				$(value.objectCoin).animate(moveTop, {queue: false, duration: 600});
 				removeCoin = index;
 				nbCoins++
 				$(".coins span").text(nbCoins);
