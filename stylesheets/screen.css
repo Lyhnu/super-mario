@@ -141,6 +141,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 15px;
 }
 /* line 80, ../sass/screen.scss */
+#content .border .hidden .endCount {
+  top: 55%;
+  left: 35%;
+  z-index: 21;
+}
+/* line 86, ../sass/screen.scss */
 #content .border .hidden .peach {
   width: 75px;
   height: 111px;
@@ -151,26 +157,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 50%;
   margin-left: -35px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #content .border .hidden .right {
   background-image: url("../images/peach-right.gif");
 }
-/* line 95, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #content .border .hidden .left {
   background-image: url("../images/peach-left.gif");
 }
-/* line 99, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #content .border .hidden .top {
   background-image: url("../images/peach-jump.gif");
 }
-/* line 103, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #content .border .hidden .map {
   width: 3000px;
   height: 400px;
   background-image: url("../images/map-peach.png");
   position: absolute;
 }
-/* line 109, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #content .border .hidden .map .flower {
   background: url("../images/flower.png");
   width: 40px;
@@ -181,19 +187,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 49px;
   position: absolute;
 }
-/* line 119, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 #content .border .hidden .map .flower.nb1 {
   left: 600px;
 }
-/* line 122, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #content .border .hidden .map .flower.nb2 {
   left: 1494px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #content .border .hidden .map .flower.nb3 {
   left: 2000px;
 }
-/* line 129, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #content .border .hidden .map .coin {
   background: url("../images/coin.gif");
   width: 30px;
@@ -201,43 +207,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 14;
   background-size: 100%;
   background-repeat: no-repeat;
-  bottom: 200px;
+  top: 220px;
   position: absolute;
 }
-/* line 139, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb1 {
   left: 500px;
-  bottom: 120px;
+  top: 260px;
 }
-/* line 143, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb2 {
   left: 550px;
-  bottom: 160px;
+  top: 240px;
 }
-/* line 147, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb3 {
   left: 600px;
 }
-/* line 150, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb4 {
-  left: 1600px;
+  left: 2200px;
 }
-/* line 153, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb5 {
   left: 1650px;
-  bottom: 160px;
+  top: 220px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #content .border .hidden .map .coin.nb6 {
   left: 1700px;
-  bottom: 120px;
-}
-/* line 161, ../sass/screen.scss */
-#content .border .hidden .map .coin.nb7 {
-  left: 2500px;
-  bottom: 60px;
+  top: 200px;
 }
 /* line 167, ../sass/screen.scss */
+#content .border .hidden .map .coin.nb7 {
+  left: 2500px;
+  top: 240px;
+}
+/* line 173, ../sass/screen.scss */
 #content .border .hidden .start-screen {
   z-index: 20;
   width: 100%;
@@ -249,23 +255,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: courier;
   font-size: 18px;
 }
-/* line 178, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #content .border .hidden .start-screen span {
   position: absolute;
   left: 90px;
   top: 110px;
   text-align: center;
 }
-/* line 184, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 #content .border .hidden .start-screen span h3 {
   font-size: 100px;
   font-family: 'super_mario_256regular';
 }
-/* line 189, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #content .border .hidden .start-screen span h3:hover {
   color: #F79FBF;
 }
-/* line 195, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #content .border .hidden .end-screen {
   display: none;
   z-index: 20;
@@ -277,19 +283,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: courier;
   font-size: 35px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #content .border .hidden .end-screen span {
   position: absolute;
   left: 32px;
-  top: 155px;
+  top: 130px;
   text-align: center;
 }
-/* line 212, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 #content .border .hidden .end-screen span h3 {
   font-size: 90px;
   font-family: 'super_mario_256regular';
-}
-/* line 217, ../sass/screen.scss */
-#content .border .hidden .end-screen span h3:hover {
-  color: #F79FBF;
 }

@@ -77,6 +77,12 @@ $peach-color:#F79FBF;
 				}
 			}
 
+			.endCount{
+				top: 55%;
+				left: 35%;
+				z-index: 21;
+			}
+
 			.peach{
 				width: 75px;
 				height: 111px;
@@ -133,34 +139,34 @@ $peach-color:#F79FBF;
 					z-index: 14;
 					background-size: 100%;
 					background-repeat: no-repeat;
-					bottom:200px;
+					top:220px;
 					position: absolute;
 				}
 				.coin.nb1{
 					left: 500px;
-					bottom: 120px;
+					top: 260px;
 				}
 				.coin.nb2{
 					left: 550px;
-					bottom: 160px;
+					top: 240px;
 				}
 				.coin.nb3{
 					left: 600px;
 				}
 				.coin.nb4{
-					left: 1600px;
+					left: 2200px;
 				}
 				.coin.nb5{
 					left: 1650px;
-					bottom: 160px;
+					top: 220px;
 				}
 				.coin.nb6{
 					left: 1700px;
-					bottom: 120px;
+					top: 200px;
 				}
 				.coin.nb7{
 					left: 2500px;
-					bottom: 60px;
+					top: 240px;
 				}
 			}
 
@@ -206,16 +212,12 @@ $peach-color:#F79FBF;
 				span{
 					position: absolute;
 					left: 32px;
-					top: 155px;
+					top: 130px;
 					text-align: center;
 
 					h3{
 						font-size: 90px;
 						font-family: 'super_mario_256regular';
-					}
-
-					h3:hover{
-						color: $peach-color;
 					}
 				}
 			}
