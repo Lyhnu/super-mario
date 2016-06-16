@@ -55,9 +55,6 @@ $(function(){
 	moveTop = {
 		top: "-=30px"
 	}
-	jumpRight = {
-		left: "-=50px"
-	}
 		//3. Initialize pos of Peach
 	var pos = $(".peach").position();
 		//4. on keydown effects with qwerty / azerty compatibilities
