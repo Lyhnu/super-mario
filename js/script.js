@@ -1,6 +1,6 @@
 $(function(){
 	//start screen
-	$(".start-screen span").css('cursor', 'pointer'); //change cursor
+	$(".start-screen h3").css('cursor', 'pointer'); //change cursor on h3
 	$(".start-screen span").click(function() {
 		$(".start-screen").fadeOut(200, function() {
 		});

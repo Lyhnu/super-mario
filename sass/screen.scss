@@ -5,7 +5,7 @@
 
 /* Compass reset + add font-face */
 @import "compass/reset";
-@font-face {
+@font-face{
     font-family: 'super_mario_256regular';
     src: url('fonts/supermario256-webfont.eot');
     src: url('fonts/supermario256-webfont.eot?#iefix') format('embedded-opentype'),
@@ -16,8 +16,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /* Initialize Peach Color */
 $peach-color:#F79FBF;
+
 
 /* Styles */
 .hide{
@@ -188,13 +190,17 @@ $peach-color:#F79FBF;
 
 				span{
 					position: absolute;
-					left: 90px;
 					top: 110px;
 					text-align: center;
+					width: 400px;
 
 					h3{
 						font-size: 100px;
 						font-family: 'super_mario_256regular';
+						-webkit-animation-duration: 3s;
+						animation-duration: 3s;
+						-webkit-animation-fill-mode: both;
+						animation-fill-mode: both;
 					}
 
 					h3:hover{
