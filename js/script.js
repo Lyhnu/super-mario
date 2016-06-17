@@ -1,9 +1,20 @@
 $(function(){
+	//play first sound and initialize level
+	$('#title')[0].play();
+	$('#jump').prop("volume", 0.1);
+	$('#flower').prop("volume", 0.1);
+	$('#coin').prop("volume", 0.1);
+	$('#start').prop("volume", 0.1);
+	$('#win').prop("volume", 0.1);
+
 	//start screen
 	$(".start-screen h3").css('cursor', 'pointer'); //change cursor on h3
 	$(".start-screen span").click(function() {
 		$(".start-screen").fadeOut(200, function() {
 		});
+		$('#title')[0].pause();
+		$('#game')[0].play();
+		$('#start')[0].play();
 	});
 
 	//end screen
@@ -13,6 +24,9 @@ $(function(){
 			$(".end-screen").fadeIn(200, function() {
 			});
 			$(".count").addClass('endCount');
+			$('#game')[0].pause();
+			$('#title')[0].play();
+			$('#win')[0].play();
 		}
 	});
 
@@ -67,6 +81,7 @@ $(function(){
 			$(".peach").addClass("left");
 			$(".map").animate(moveLeft, 0);
 		} else if (event.which == 90 || event.which == 87) { //90 = Z, 87 = W
+			$('#jump')[0].play();
 			$(".peach").addTemporaryClass("top", 400);
 			$(".peach").animate({'top':pos.top - 120 + 'px'}, 250);
 			setTimeout(function(){
@@ -84,6 +99,8 @@ $(function(){
 			var distX = Math.abs(value.posFlowerLeft - posPeachX); //initialize distance X between Peach and flowers
 			console.log(index + "flowerX: ", distX); //check distance X
 			if (distX < 46) { //if dist is inferior to 46, animate to fadeOut with opacity ad move at the same time
+				$('#flower')[0].currentTime = 0;
+				$('#flower')[0].play();
 				$(value.objectFlower).animate({opacity: 0, bottom: "80px"}, 600);
 				removeFlower = index;//stock this index
 				nbFlowers++//increment +1 number of flowers
@@ -108,6 +125,8 @@ $(function(){
 			console.log(index + "coinX: ", distX); //check distance X
 			console.log(index + "xoinY: ", distY); //check distance Y
 			if (distX < 46 && distY < 50) { //if distX is inferior to 46 and distY to 50, animate to fadeOut with opacity ad move at the same time
+				$('#coin')[0].currentTime = 0;
+				$('#coin')[0].play();
 				$(value.objectCoin).animate({opacity:0}, {queue: false, duration: 600});
 				$(value.objectCoin).animate(moveTop, {queue: false, duration: 600});
 				removeCoin = index;//stock this index

@@ -26,6 +26,10 @@ $peach-color:#F79FBF;
 	display:none;
 }
 
+audio{
+	display:none;
+}
+
 #content{
 	background: $peach-color;
 	background-image: url('../images/texture.png');
@@ -222,9 +226,9 @@ $peach-color:#F79FBF;
 
 				span{
 					position: absolute;
-					left: 32px;
 					top: 130px;
 					text-align: center;
+					width: 400px;
 
 					h3{
 						font-size: 90px;
